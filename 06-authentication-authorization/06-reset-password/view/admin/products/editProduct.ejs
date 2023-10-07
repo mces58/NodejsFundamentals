@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../include/head.ejs') %>
+
+  <body>
+    <%- include('../../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="text-center mb-4">Edit Product</h1>
+          <form
+            action="/admin/product/edit?_csrf=<%= csrfToken %>"
+            method="post"
+            enctype="multipart/form-data"
+            id="product-form">
+            <input type="hidden" name="id" value="<%= product.id %>" />
+            <div class="mb-3">
+              <label for="product-name" class="form-label">
+                Product Name
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="product-name"
+                name="name"
+                value="<%= product.name %>" />
+            </div>
+            <div class="mb-3">
+              <label for="product-price" class="form-label">
+                Product Price
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="product-price"
+                name="price"
+                value=" <%= product.price %>" />
+            </div>
+            <div class="mb-3">
+              <label for="product-description" class="form-label">
+                Product Description
+              </label>
+              <textarea
+                name="description"
+                id="product-description"
+                rows="30"
+                class="form-control">
+                <%= product.description %>
+              </textarea>
+            </div>
+            <div class="mb-3">
+              <input
+                type="hidden"
+                name="oldImage"
+                value="<%= product.image %>" />
+              <label for="product-image" class="form-label">
+                Product Image
+              </label>
+              <img
+                src="/static/img/<%= product.image %>"
+                alt="<%= product.name %>"
+                class="img-fluid rounded-4 mb-2 shadow"
+                width="250" />
+              <input
+                type="file"
+                class="form-control"
+                id="product-image"
+                name="image"
+                value="<%= product.image %>" />
+            </div>
+            <div>
+              <label for="product-category" class="form-label">
+                Product Category
+              </label>
+              <select
+                class="form-select"
+                id="product-category"
+                name="categoryId">
+                <% categories.forEach(category=> { %> <% if
+                (category.id==product.category_id) { %>
+                <option value="<%= category.id %>" selected>
+                  <%= category.name %>
+                </option>
+                <% } else { %>
+                <option value="<%= category.id %>"><%= category.name %></option>
+                <% } %> <% }) %>
+              </select>
+            </div>
+            <div class="d-grid mt-4">
+              <button
+                class="btn btn-primary scale-min"
+                type="submit"
+                id="save-button">
+                Save Product
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor.create(
+        document.querySelector("#product-description")
+      ).catch((error) => {
+        console.error(error);
+      });
+    </script>
+  </body>
+</html>
