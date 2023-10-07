@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <% products.forEach(product => { %>
+    <h1><%= product.name %></h1>
+    <p><%= product.price %></p>
+    <% }) %>
+
+    <!-- standart for döngüsü -->
+    <% for( let i = 0; i < products.length; i++ ) { %>
+    <h1><%= products[i].name %></h1>
+    <p><%= products[i].price %></p>
+    <% } %>
+  </body>
+</html>
