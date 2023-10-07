@@ -1,0 +1,7 @@
+{
+  "name": "shopapp web api development",
+  "db": {
+    "name": "shopdb",
+    "username": "can"
+  }
+}

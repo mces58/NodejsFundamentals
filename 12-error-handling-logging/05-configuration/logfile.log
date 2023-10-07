@@ -1,0 +1,15 @@
+{
+  message: 'Listening on port 7070',
+  level: 'info',
+  timestamp: '2023-08-31 09:44:18'
+}
+{
+  message: 'Connected to MongoDB...',
+  level: 'info',
+  timestamp: '2023-08-31 09:44:20'
+}
+{
+  message: '500 - Could not get the products. - /api/products/ - GET - ::1',
+  level: 'error',
+  timestamp: '2023-08-31 09:44:31'
+}
