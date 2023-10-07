@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../include/head.ejs') %>
+
+  <body>
+    <%- include('../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-5">
+      <div class="row">
+        <div
+          class="alert alert-danger alert-dismissible fade show mb-3"
+          role="alert">
+          <p class="mb-0">Bilinmeyen bir hata oluştu. Lütfen tekrar deneyin.</p>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/alert.js"></script>
+  </body>
+</html>

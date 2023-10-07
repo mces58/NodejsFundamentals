@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../include/head.ejs') %>
+
+  <body>
+    <%- include('../include/nav.ejs') %>
+
+    <div class="container pt-4 mt-5">
+      <!-- Section: Design Block -->
+      <section class="text-center text-lg-start">
+        <style>
+          .cascading-right {
+            margin-right: -50px;
+          }
+
+          @media (max-width: 991.98px) {
+            .cascading-right {
+              margin-right: 0;
+            }
+          }
+        </style>
+
+        <!-- Jumbotron -->
+        <div class="py-4">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div
+                class="card cascading-right shadow"
+                style="
+                  background: hsla(0, 0%, 100%, 0.55);
+                  backdrop-filter: blur(30px);
+                ">
+                <div class="card-body p-5 shadow-5 text-center">
+                  <h2 class="fw-bold mb-5">Sign up now</h2>
+                  <% if (typeof message != "undefined") { %>
+                  <div
+                    class="alert alert-<%= message.class %> alert-dismissible fade show mb-3"
+                    role="alert">
+                    <p class="mb-0"><%= message.text %></p>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"></button>
+                  </div>
+                  <% } %>
+                  <form action="/account/register" method="post">
+                    <input
+                      type="hidden"
+                      name="_csrf"
+                      value="<%= csrfToken %>" />
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-floating mb-3">
+                          <input
+                            type="text"
+                            class="form-control shadow"
+                            id="userName"
+                            name="userName"
+                            placeholder="" />
+                          <label for="userName">User name</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-floating mb-3">
+                          <input
+                            type="email"
+                            class="form-control shadow"
+                            id="email"
+                            name="email"
+                            placeholder="" />
+                          <label for="email">Email address</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-floating mb-4">
+                      <input
+                        type="password"
+                        class="form-control shadow"
+                        id="password"
+                        name="password"
+                        placeholder="" />
+                      <label for="password">Password</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control shadow"
+                        id="repeatPassword"
+                        name="repeatPassword"
+                        placeholder="" />
+                      <label for="repeatPassword">Repeat password</label>
+                    </div>
+
+                    <div class="form-check d-flex justify-content-center mb-4">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="form2Example33"
+                        checked />
+                      <label class="form-check-label" for="form2Example33">
+                        Subscribe to our newsletter
+                      </label>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn btn-lg btn-outline-primary mb-4 shadow scale-min">
+                      Sign up
+                      <i class="fa fa-plus ms-1"></i>
+                    </button>
+
+                    <div class="text-center">
+                      <p>or sign up with:</p>
+                      <button
+                        type="button"
+                        class="btn btn-link btn-floating mx-1 scale-max">
+                        <i class="fa fa-facebook fs-5"></i>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="btn btn-link btn-floating mx-1 scale-max">
+                        <i class="fa fa-google fs-5"></i>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="btn btn-link btn-floating mx-1 scale-max">
+                        <i class="fa fa-twitter fs-4"></i>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="btn btn-link btn-floating mx-1 scale-max">
+                        <i class="fa fa-github fs-4"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <img
+                src="/static/img/registerPicture.jpg"
+                class="w-100 rounded-4 shadow-4 shadow"
+                alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- Jumbotron -->
+      </section>
+      <!-- Section: Design Block -->
+    </div>
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/alert.js"></script>
+  </body>
+</html>
