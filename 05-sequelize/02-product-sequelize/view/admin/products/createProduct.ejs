@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../include/head.ejs') %>
+
+  <body>
+    <%- include('../../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="text-center mb-4">Create Product</h1>
+          <!--- enctype="multipart/form-data" ile server tarafına dosyada taşıyabiliriz -->
+          <form
+            action="/admin/product/create"
+            method="post"
+            id="product-form"
+            enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="product-name" class="form-label">Product Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="product-name"
+                name="name"
+                required />
+            </div>
+            <div class="mb-3">
+              <label for="product-price" class="form-label">
+                Product Price
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="product-price"
+                name="price"
+                required />
+            </div>
+            <div class="mb-3">
+              <label for="product-description" class="form-label">
+                Product Description
+              </label>
+              <textarea
+                name="description"
+                id="product-description"
+                rows="30"
+                class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="product-image" class="form-label">
+                Product Image
+              </label>
+              <input
+                type="file"
+                class="form-control"
+                id="product-image"
+                name="image"
+                required />
+            </div>
+            <div class="d-grid mt-4">
+              <button
+                class="btn btn-primary scale-min"
+                type="submit"
+                id="create-button">
+                Create Product
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    <script>
+      ClassicEditor.create(
+        document.querySelector("#product-description")
+      ).catch((error) => {
+        console.error(error);
+      });
+    </script>
+  </body>
+</html>

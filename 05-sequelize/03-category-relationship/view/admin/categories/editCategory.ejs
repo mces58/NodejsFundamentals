@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../include/head.ejs') %>
+
+  <body>
+    <%- include('../../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="text-center mb-4">Edit Category</h1>
+          <form action="/admin/category/edit" method="post" id="category-form">
+            <input type="hidden" name="id" value="<%= category.id %>" />
+            <div class="mb-3">
+              <label for="category-name" class="form-label">
+                Category Name
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="category-name"
+                name="name"
+                value="<%= category.name %>" />
+            </div>
+            <div class="mb-3">
+              <label for="category-description" class="form-label">
+                Category Description
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="category-description"
+                name="description"
+                value=" <%= category.description %>" />
+            </div>
+            <div class="d-grid mt-4">
+              <button
+                class="btn btn-primary scale-min"
+                type="submit"
+                id="save-button">
+                Save Category
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

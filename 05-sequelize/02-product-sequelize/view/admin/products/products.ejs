@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../include/head.ejs') %>
+
+  <body>
+    <%- include('../../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-4">
+      <div class="row">
+        <h1 class="py-4 text-center">Product List</h1>
+        <% if (action != undefined && action == "create") { %>
+        <div
+          class="alert alert-success alert-dismissible fade show"
+          role="alert">
+          <h4 class="alert-heading"><%= productName %> Created!</h4>
+          <hr />
+          <p class="mb-0">Product has been created successfully.</p>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"></button>
+        </div>
+        <% } %> <% if (action != undefined && action == "edit") { %>
+        <div
+          class="alert alert-warning alert-dismissible fade show"
+          role="alert">
+          <h4 class="alert-heading"><%= productName %> Updated!</h4>
+          <hr />
+          <p class="mb-0">Product has been updated successfully.</p>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"></button>
+        </div>
+        <% } %> <% if (action != undefined && action == "delete") { %>
+        <div
+          class="alert alert-danger alert-dismissible fade show"
+          role="alert">
+          <h4 class="alert-heading"><%= productName %> Deleted!</h4>
+          <hr />
+          <p class="mb-0">Product has been deleted successfully.</p>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"></button>
+        </div>
+        <% } %>
+
+        <table class="table table-bordered table-dark">
+          <thead class="thead-dark">
+            <tr class="text-center">
+              <th>#</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Image</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% products.forEach((product, index) => { %>
+            <tr class="text-center">
+              <td><%= index + 1 %></td>
+              <td><%= product.name %></td>
+              <td><i class="fa fa-try"></i> <%= product.price %></td>
+              <td><%- product.description %></td>
+              <!-- = yerine - kullandığımızda ckeditor de değişiklikleri html kodu olarak yorumlar -->
+              <td>
+                <img
+                  src="/static/img/<%= product.image %>"
+                  class="img-fluid rounded-4"
+                  width="200"
+                  alt="" />
+              </td>
+
+              <td>
+                <a
+                  href="/admin/product/edit/<%= product.id %>"
+                  class="btn btn-sm btn-warning w-100 mb-4 scale-min">
+                  Edit
+                </a>
+                <a
+                  href="/admin/product/delete/<%= product.id %>"
+                  class="btn btn-sm btn-danger w-100 scale-min">
+                  Delete
+                </a>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/alert.js"></script>
+  </body>
+</html>
