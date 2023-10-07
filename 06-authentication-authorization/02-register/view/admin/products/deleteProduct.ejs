@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../include/head.ejs') %>
+
+  <body>
+    <%- include('../../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="card p-0 shadow">
+            <div
+              class="card-header d-flex align-items-center position-relative">
+              <div class="d-inline text-center flex-grow-1">
+                <h3 class="card-title"><%= product.name.toUpperCase() %></h3>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-7">
+                  <img
+                    src="/static/img/<%= product.image %>"
+                    alt="<%= product.name %>"
+                    class="img-fluid img-thumbnail rounded-5 scale-min shadow" />
+                </div>
+                <div class="col-md-5 mt-4">
+                  <p>
+                    <strong>Price:</strong> <%= product.price %>
+                    <i class="fa fa-try"></i>
+                  </p>
+                  <p class="d-flex float-start">
+                    <strong class="me-2">Description: </strong> <%-
+                    product.description %>
+                  </p>
+                  <p>
+                    <strong>Category:</strong> <%=
+                    product.category_sequelize.name %>
+                  </p>
+                  <form action="/admin/product/delete" method="post">
+                    <input type="hidden" name="id" value="<%= product.id %>" />
+                    <div>
+                      <button
+                        class="btn btn-outline-danger shadow scale-max"
+                        type="submit">
+                        <i class="fa fa-trash"></i>
+                        Delete
+                      </button>
+
+                      <a
+                        href="/admin/product/edit/<%= product.id %>"
+                        class="btn btn-outline-warning ms-3 shadow scale-max">
+                        <i class="fa fa-pencil"></i>
+                        Edit
+                      </a>
+                      <a
+                        href="/admin/products"
+                        class="btn btn-outline-primary ms-3 shadow scale-max">
+                        <i class="fa fa-ban"></i>
+                        Cancel
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
