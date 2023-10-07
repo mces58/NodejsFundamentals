@@ -28,3 +28,61 @@
 	src="https://img.shields.io/github/followers/mces58?label=FOLLOWERS&style=for-the-badge&logo=data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjU2cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KDTxnIGlkPSJTVkdSZXBvX2JnQ2FycmllciIgc3Ryb2tlLXdpZHRoPSIwIi8+Cg08ZyBpZD0iU1ZHUmVwb190cmFjZXJDYXJyaWVyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KDTxnIGlkPSJTVkdSZXBvX2ljb25DYXJyaWVyIj4gPHBhdGggZD0iTTIwLjUgMjFDMjEuODgwNyAyMSAyMyAxOS44ODA3IDIzIDE4LjVDMjMgMTYuMTcyNiAyMS4wNDgyIDE1LjE5ODggMTkgMTQuNzkxN00xNSAxMUMxNy4yMDkxIDExIDE5IDkuMjA5MTQgMTkgN0MxOSA0Ljc5MDg2IDE3LjIwOTEgMyAxNSAzTTMuNSAyMS4wMDAxSDE0LjVDMTUuODgwNyAyMS4wMDAxIDE3IDE5Ljg4MDggMTcgMTguNTAwMUMxNyAxNC40MTk0IDExIDE0LjUwMDEgOSAxNC41MDAxQzcgMTQuNTAwMSAxIDE0LjQxOTQgMSAxOC41MDAxQzEgMTkuODgwOCAyLjExOTI5IDIxLjAwMDEgMy41IDIxLjAwMDFaTTEzIDdDMTMgOS4yMDkxNCAxMS4yMDkxIDExIDkgMTFDNi43OTA4NiAxMSA1IDkuMjA5MTQgNSA3QzUgNC43OTA4NiA2Ljc5MDg2IDMgOSAzQzExLjIwOTEgMyAxMyA0Ljc5MDg2IDEzIDdaIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4gPC9nPgoNPC9zdmc+&color=rgbrgb(0, 191, 255)&labelColor=rgb(56,56,56)" />
 </div>
 <hr>
+
+<h1 align="center">Node.js: The New Way of Web Development</h1>
+
+<p>
+	The world of web development is constantly changing, and keeping up with the advancements is crucial. That's why we have prepared this Node.js course to provide you with everything you need to create creative and impressive projects
+	in the field of web development.	
+</p>
+
+<p>
+	This course will teach you Node.js in detail from start to finish. First, you will get an introduction to the fundamentals of Node.js, and then you will learn how to integrate external packages using <code><b>NPM</b></code> (Node Package Manager). 
+	You will explore developing dynamic websites using  <code><b>Express.js</b></code>.
+</p>
+
+<p>
+	While working with MySQL and <code><b>Sequelize</b></code> for database operations, you will also gain knowledge in authentication and authorization. Additionally, 
+	you will learn important topics like data validation and RESTful API design and discover how to access NoSQL databases using Node.js with MongoDB and <code><b>Mongoose</b></code>.
+</p>
+
+<p>
+	This course is suitable for both beginners in the Node.js world and experienced developers. By working on practical examples and real-world projects, you will have the opportunity to apply what you have learned immediately. 
+	You will also address critical topics such as token-based authentication, error handling, and logging, learning how to develop your products in a more secure and stable manner.
+</p>
+
+<p>
+	Start building your own web applications with the Node.js Course and elevate yourself in the world of web development. Explore the limitless potential that Node.js offers and bring your creative projects to life.
+</p>
+
+<hr>
+
+<ol type="1">
+	<h2>
+	<li>
+		&#x1F4A1; 
+		<a href="https://github.com/mces58/NodejsFundamentals/tree/main/00-nodejs">BASIC</a>
+		</li>
+ 	</h2>
+ 	<p>
+		<em>
+			Node.js Fundamentals: In this section, we focus on the foundational building blocks of Node.js. We begin with a brief introduction to the course and then provide detailed information about the global object of Node.js, 
+			known as the 'global object.' 
+			By covering the topic of Node modules, you will learn how to make your code modular. Additionally, by exploring the concepts of HTTP request-response, you will gain an understanding of how Node.js operates in web applications. 
+			This section serves as an excellent starting point for your journey to understand and utilize the fundamental building blocks of Node.js. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/00-intro/app.js">Hello Node.js</a>
+		</li>
+		</br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/01-global-object/app.js">Global Object</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/02-filename-dirname/app.js">Filename & Dirname</a>
+		</li>
+	</ul>
+</ol>
