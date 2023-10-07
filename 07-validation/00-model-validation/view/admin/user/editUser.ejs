@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../include/head.ejs') %>
+
+  <body>
+    <%- include('../../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="text-center mb-4">Edit User</h1>
+          <form action="/admin/users/edit" method="post" id="user-form">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+            <input type="hidden" name="id" value="<%= user.id %>" />
+            <div class="mb-3">
+              <label for="user-name" class="form-label">
+                <strong>User Name</strong>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="user-name"
+                name="userName"
+                value="<%= user.userName %>" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">
+                <strong>User Email</strong>
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                value="<%= user.email %>"
+                readonly />
+            </div>
+            <div class="mb-3">
+              <label for="user-roles" class="form-label">
+                <strong>User Roles</strong>
+              </label>
+              <% roles.forEach(role => { %>
+              <div class="form-check">
+                <input type="checkbox" id="role<%= role.id %>"
+                class="form-check-input" name="roles[]" value="<%= role.id %>"
+                <%= user.roles.some(rol=> rol.id == role.id) ? "checked" : "" %>
+                />
+                <label for="role<%= role.id %>" class="form-check-label">
+                  <%= role.name %>
+                </label>
+              </div>
+              <% }) %>
+            </div>
+            <div class="d-grid mt-4">
+              <button
+                class="btn btn-primary scale-min"
+                type="submit"
+                id="save-button">
+                Save User
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

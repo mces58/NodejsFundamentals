@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../include/head.ejs') %>
+
+  <body>
+    <%- include('../../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-4">
+      <div class="row">
+        <h1 class="py-4 text-center">User List</h1>
+        <table class="table table-bordered table-dark">
+          <thead class="thead-dark">
+            <tr class="text-center">
+              <th>Id</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Roles</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% users.forEach((user) => { %>
+            <tr class="text-center">
+              <td><%= user.id %></td>
+              <td><%= user.userName %></td>
+              <td><%= user.email %></td>
+              <td>
+                <% user.roles.forEach((role) => { %>
+                <span class="badge bg-primary"><%= role.name %></span>
+                <% }) %>
+              </td>
+              <td>
+                <a
+                  href="/admin/users/edit/<%= user.id %>"
+                  class="btn btn-sm btn-warning w-75 mb-4 shadow scale-min">
+                  Edit
+                </a>
+                <a
+                  href="/admin/users/delete/<%= user.id %>"
+                  class="btn btn-sm btn-danger w-75 shadow scale-min">
+                  Delete
+                </a>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/alert.js"></script>
+  </body>
+</html>

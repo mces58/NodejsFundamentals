@@ -1,0 +1,23 @@
+<% if (totalPage > 1) { %>
+<nav class="d-flex justify-content-center pt-4 my-5">
+  <ul class="pagination shadow">
+    <li class="page-item">
+      <a class="page-link bg-body-tertiary" href="?page=0">İlk Sayfa</a>
+    </li>
+    <% for( let i = 0; i < totalPage; i++ ) { %>
+    <li class="page-item">
+      <a
+        class="page-link <%= (currentPage == i) ? 'active':''%>"
+        href="?page=<%= i %>">
+        <%= i + 1%>
+      </a>
+    </li>
+    <% } %>
+    <li class="page-item">
+      <a class="page-link bg-body-tertiary" href="?page=<%= totalPage - 1 %>"
+        >Son Sayfa</a
+      >
+    </li>
+  </ul>
+</nav>
+<% } %>

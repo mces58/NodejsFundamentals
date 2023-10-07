@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../include/head.ejs') %>
+
+  <body>
+    <%- include('../../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="text-center mb-4">Edit Role</h1>
+          <form action="/admin/roles/edit" method="post" id="role-form">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+            <input type="hidden" name="id" value="<%= role.id %>" />
+            <div class="mb-3">
+              <label for="role-name" class="form-label">
+                <strong>Role Name</strong>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="role-name"
+                name="name"
+                value="<%= role.name %>" />
+            </div>
+            <div class="d-grid mt-4">
+              <button
+                class="btn btn-primary scale-min"
+                type="submit"
+                id="save-button">
+                Save Category
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <table class="table table-bordered mt-2">
+          <thead class="thead-dark">
+            <tr class="text-center">
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% users.forEach((user, index) => { %>
+            <tr class="text-center">
+              <td><%= index + 1 %></td>
+              <td><%= user.userName %></td>
+              <td><%= user.email %></td>
+              <td>
+                <a
+                  href="/admin/users/edit/<%= user.id %>"
+                  class="btn btn-sm btn-warning w-100 mb-4 scale-min shadow">
+                  Edit
+                </a>
+                <form action="/admin/roles/delete" method="post">
+                  <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+                  <input type="hidden" name="roleId" value="<%= role.id %>" />
+                  <input type="hidden" name="userId" value="<%= user.id %>" />
+                  <button
+                    class="btn btn-sm btn-danger w-100 scale-min shadow"
+                    type="submit">
+                    Delete
+                  </button>
+                </form>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
