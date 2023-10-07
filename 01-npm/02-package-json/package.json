@@ -1,0 +1,25 @@
+{
+  "name": "02-package-json",
+  "version": "1.0.0",
+  "description": "Bu bir denemedir",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "can": "echo 'Merhaba ben Mehmetcan, bu benim özel kodum.'"
+  },
+  "keywords": [
+    "react",
+    "angular",
+    "js"
+  ],
+  "author": "Mehmetcan ESER",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mces58/JavaEssentials.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mces58/JavaEssentials/issues"
+  },
+  "homepage": "https://github.com/mces58/JavaEssentials#readme"
+}

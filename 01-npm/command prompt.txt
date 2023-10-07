@@ -1,0 +1,104 @@
+# Node.js komut istemi kodları (CMD command prompt üzinde çalıştır, Powershell değil)
+
+1-) mkdir klasör adı => yeni bir klasör oluşturur
+
+2-) rmdir klasör adı => klasörü siler (bash rm -r klasör adı)
+
+3-) cd klasör adı => klasörün içine girer
+
+4-) cd .. => bir üst klasöre çıkar
+
+5-) dir => klasörün içindeki dosyaları listeler (Powershell'de ise ls komutu)
+
+6-) echo.>dosya adı => yeni bir dosya oluşturur 
+(Powershell'de ise new-item -itemtype file -name "dosya adı") (touch ile dosya oluşturur bash)
+
+7-) del "dosya adı" => dosyayı siler (Powershell'de rm "dosya adı")
+
+8-) type "dosya adı" => dosyanın içeriğini gösterir (Powershell'de cat dosya adı)
+
+9-) echo "yazı" > "dosya adı" => dosyaya yazı ekler
+
+10-) echo "yazı" >> "dosya adı" => dosyaya yazı ekler önceki yazılanları silmeden
+
+11-) node "dosya adı" => dosyayı çalıştırır
+
+12-) npm init => package.json dosyası oluşturur
+
+13-) npm install "paket adı" => paket yükler
+
+14-) npm install "paket adı" -g => paketi global olarak yükler
+
+15-) npm uninstall "paket adı" => paketi kaldırır
+
+16-) npm uninstall "paket adı" -g => paketi global olarak kaldırır
+
+17-) npm install => package.json dosyasındaki paketleri yükler (dependency paketlerinin hepsini yükler)
+
+18-) npm install --save-dev "paket adı" => package.json dosyasına developer dependency olarak paketi ekler
+
+19-) npm run "script adı" => package.json içinde ki script kodlarını çalıştırır
+
+20-) npm list -g => global paketleri listeler
+
+21-) npm list -g --depth 0 => global paketleri listeler (depth 0 => paketlerin içindeki paketleri göstermez)
+
+22-) npm list => local paketleri listeler
+
+23-) npm list --depth 0 => local paketleri listeler (depth 0 => paketlerin içindeki paketleri göstermez)
+
+24-) npm root -g => global paketlerin kurulu olduğu dizini verir
+
+25-) npm install paket ismi --save-dev => developer dependency olarak paketi yükler
+
+26-) npm uninstall paket ismi => paketi local olarak kaldırır
+
+27-) npm uninstall paket ismi -g => paketi global olarak kaldırır
+
+28-) npm uninstall paket ismi --save-dev => paketi developer dependency'den kaldırır
+
+29-) npm update paket ismi => paketi günceller
+
+30-) npm update paket ismi -g => paketi global olarak günceller
+
+31-) npm update paket ismi --save-dev => paketi developer dependency olarak günceller
+
+32-) npm outdated => paketlerin güncel olup olmadığını gösterir
+
+33-) npm outdated -g => global paketlerin güncel olup olmadığını gösterir
+
+34-) npm search paket ismi => npm veritabanında paketleri aramak için kullanılır
+
+35-) npm view paket ismi => paketin bilgilerini gösterir
+
+36-) npm version => Proje sürümünü güncellemek için kullanılır
+
+37-) npm version major => Proje sürümünü major olarak günceller
+
+38-) npm version minor => Proje sürümünü minor olarak günceller
+
+39-) npm version patch => Proje sürümünü patch olarak günceller
+
+40-) npm audit => Projenin güvenlik açıklarını denetlemek için kullanılır
+
+41-) npm audit fix => Projenin güvenlik açıklarını düzeltmek için kullanılır
+
+42-) npm audit fix --force => Projenin güvenlik açıklarını düzeltmek için kullanılır (force => zorla)
+
+43-) npm audit fix --only=dev => Projenin güvenlik açıklarını düzeltmek için kullanılır (sadece developer dependency'ler için)
+
+44-) npm audit fix --only=prod => Projenin güvenlik açıklarını düzeltmek için kullanılır (sadece dependency'ler için)
+
+45-) npm audit fix --package-lock-only => Projenin güvenlik açıklarını düzeltmek için kullanılır (package-lock.json dosyasını günceller)
+
+46-) npm config => npm yapılandırma ayarlarını yönetmek için kullanılır
+
+47-) npm config list => npm yapılandırma ayarlarını listelemek için kullanılır
+
+48-) npm dedupe => Bu komut, paketlerinizi analiz eder, yinelenen bağımlılıkları belirler ve bunları tek bir yerde birleştirir. node_modules klasöründe yinelenen paketlerin kopyaları kaldırılır ve sadece bir kez yüklenir
+
+49-) npm docs paket ismi => paketin dokumantasyonunu gösterir
+
+50-) npm ll => dependency'leri gösterir
+
+51-) npm prune => Kullanılmayan bağımlılıklar, package.json dosyasındaki dependencies veya devDependencies bölümlerinde tanımlanmış olsa bile, projenin gerçek kullanımında kullanılmıyorsa kaldırılır

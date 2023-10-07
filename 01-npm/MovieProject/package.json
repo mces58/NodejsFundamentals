@@ -1,0 +1,25 @@
+{
+  "name": "movie-project",
+  "version": "1.0.0",
+  "description": "Movie Database Apisi kullanılarak geliştirilen bir projedir",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch --mode development",
+    "build": "webpack --watch --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "mces58",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
+}
