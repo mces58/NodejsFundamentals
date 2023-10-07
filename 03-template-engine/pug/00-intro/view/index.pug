@@ -1,0 +1,44 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title #{title}
+        // dinamik veri eklemek için #{} notasyonu kullanılır
+    body
+        h1(style="background:red") Hello world
+        // attribute'ler parantez içinde yazılır
+
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, numquam.
+        p 
+            |Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, blanditiis?
+
+        // aşağı satırda içerik yazabilmek için | işaretini kullanmamız gerekiyor. Eşiti aşaıdaki gibidir
+        // <p>
+        //     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, alias.
+        // </p>
+
+        p.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+        // | yerine . da kullanılabilir
+
+
+// Pug Nedir?
+
+// Pug (daha önce Jade olarak bilinir), Express.js ve diğer Node.js tabanlı web çatılarıyla kullanılan bir şablon motorudur. Pug, HTML'i daha az yazmayı ve daha basit bir sözdizimi ile şablonları oluşturmayı sağlayan bir JavaScript şablon motorudur.
+
+// Pug, diğer şablon motorlarından farklı olarak, etiketleri açma ve kapama işaretleri (<> ve </>) olmadan kullanır ve düzenli bir şekilde girintileme yapısını temel alır. Bu sayede, kodu daha temiz ve okunabilir hale getirir. Pug, beyaz boşlukları önemser ve bu nedenle girintilemeleri doğru bir şekilde yapmak önemlidir.
+
+// Pug'ın temel özellikleri şunlardır:
+
+// 1-Girintilemeli Sözdizimi: Pug, kodu daha düzenli ve okunabilir hale getirmek için girintilemeli bir sözdizimini temel alır. HTML etiketleri yerine boşluklar ve girintilemeler kullanır. Bu sayede şablonlar daha az kod ile yazılabilir.
+
+// 2-Etiketler ve Öznitelikler: Pug, etiketleri ve öznitelikleri açma ve kapama işaretleri olmadan kullanır. Örneğin, div etiketi için açma ve kapama işareti kullanmak yerine, girintilemeleri kullanarak div etiketini oluşturabilirsiniz.
+
+// 3-Değişkenler ve Veri Bağlama: Pug, şablonlarda değişkenler ve verileri kolayca bağlama imkanı sağlar. Express.js tarafından geçirilen verileri şablon içinde kullanabilir ve dinamik içerik oluşturabilirsiniz.
+
+// 4-Kontrol Yapıları: Pug, koşullu ifadeler, döngüler ve döngü içinde değişkenleri kullanma gibi kontrol yapılarını destekler. Bu sayede dinamik içerik oluşturmak ve veri yönetimini yapmak daha kolay olur.
+
+// 5-Include ve Extend: Pug, include ve extend özellikleri sayesinde şablonları parçalara ayırma ve tekrar kullanma imkanı sunar. Bu sayede ortak şablonları oluşturmak ve projenin bakımını kolaylaştırmak mümkündür.
+
+// 6-Filtreler: Pug, Markdown, Sass, Less gibi çeşitli filtreleri destekler. Bu sayede HTML dışında farklı dillerde içerikleri şablonlarda kullanmak mümkündür.

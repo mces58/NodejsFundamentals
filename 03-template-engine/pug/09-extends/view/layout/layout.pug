@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet")
+        title #{title}
+        block cssFile
+    body 
+        h1 Ana sayfa 
+        .container 
+            block content
+        
+        block jsFile
+
+        // bu bir ana sablon dosyasıdır
+        // diğer dosyalar bu ana sablon dosyasını kullanacaklar böylece kod tekrarıdan kaçınalım
+        // block ile içeriklerimizi ekleyebiliriz
+        // block ile değiştirilebilir yerleri belirliyoruz
+        // örneğin bu sablonu kullanan bir sayfa block cssFile ile kendi css dosyasını ekleyebilir hale gelir
+        // block content ile container içine istediği içeriği ekleyebilir ama container dışına ekleyemez
+        // çünkü bu sablonu kullanıyor

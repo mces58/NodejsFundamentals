@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+    body
+        h2 My Web Application
+
+        // if-else
+        if 5 > 3
+            p 5 3'ten büyüktür
+        else
+            p 5 3'ten küçük değildir
+        // <p>5 3'ten büyüktür</p> ifadesini yazar
+
+        // if - else if - else
+        if 2 > 3
+            p 2 3'ten büyüktür
+        else if 2 < 3
+            p 2 3'ten küçüktür
+        else
+            p 2 3'e eşittir
+        // <p>2 3'ten küçüktür</p> ifadesini yazar
+
+        - let user = {name: "Can", loggedIn: false, lastLogin: 19}
+        if user.loggedIn
+            p Hoşgeldin #{user.name}
+        else if user.lastLogin > 10
+            p Son girişin #{user.lastLogin} saat önce
+        else
+            p Lütfen giriş yapın
+        // <p>Lütfen giriş yapın</p> ifadesini yazar
+        // #{} ile dinamik değerler oluşturabiliriz
+        

@@ -1,0 +1,12 @@
+mixin card(argument)
+    .card
+        .card-body
+            h5.card-title #{argument.title}
+            p.card-text #{argument.text}
+            a.btn.btn-primary(href="#") #{argument.button}
+
+            // h5.card-title = argument.title 
+            // p.card-text = argument.text
+            // a.btn.btn-primary(href="#") = argument.button
+            // ikisi de aynı işi yapar
+        

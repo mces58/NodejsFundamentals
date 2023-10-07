@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+    body
+        include includes/navbar.pug
+        h1 Hello World
+
+        // include ile başka dosyaları dahil edebiliriz
+        // burada navbar dosyasını dahil ettik
+        // include ile dahil ettiğimiz dosyaların uzantısını yazmamıza gerek yoktur
+        // dosyaları parçalara ayırmak yönetebilmek için faydalıdır
+        

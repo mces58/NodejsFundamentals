@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+    body
+        // Case örneği
+        - let trafikLambasi = {kirmizi: {text:"Dur", style:"background:red; color:white"}, sari: {text:"Hazır", style:"background:yellow; color:black"}, yesil: {text:"Geç", style:"background:green; color:white"}}
+
+        - let renk = "yesil"
+
+        case renk
+            when "kirmizi"
+                p(style=trafikLambasi.kirmizi.style) #{trafikLambasi.kirmizi.text}
+            when "sari"
+                p(style=trafikLambasi.sari.style) #{trafikLambasi.sari.text}
+            when "yesil"
+                p(style=trafikLambasi.yesil.style) #{trafikLambasi.yesil.text}
+            default
+                p Trafik lambasında hata var

@@ -1,0 +1,13 @@
+extends layout/layout.pug
+
+block cssFile 
+    link(rel="stylesheet", href="css/index.css")
+    // cssFile ile sablonun bize sağlamış olduğu css alanına css dosyamızı ekliyoruz
+
+block content
+    h1 Hello World
+    p.bg-danger Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+    p.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+    // content ile sablonun bize sağlamış olduğu content alanına içeriğimizi ekliyoruz
+    // böylece head ile body gibi alanların tekrarından kaçınmış oluyoruz    

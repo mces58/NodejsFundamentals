@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+    body
+        h1 Hello World
+
+        // For each
+        each number in [1,2,3,4,5]
+            p= number
+        // <p>1</p>
+        // <p>2</p>
+        // <p>3</p>
+        // <p>4</p>
+        // <p>5</p>
+        // bütün elemanları p etiketi içine yazar
+
+        each char, index in ["a", "b", "c", "d", "e"]
+            p= index + " - " + char
+        // <p>0 - a</p>
+        // <p>1 - b</p>
+        // <p>2 - c</p>
+        // <p>3 - d</p>
+        // <p>4 - e</p>
+        // index ile elemanın indexini alabiliriz
+        // ikinci parametre index numarası olarak geçer
+
+        // nesne üzerinde for
+        each val, key in {name: "Mustafa", age: 25, city: "İstanbul"}
+            p= key + " - " + val
+        // <p>name - Mustafa</p>
+        // <p>age - 25</p>
+        // <p>city - İstanbul</p>
+        // key ile nesnenin key'ini alabiliriz
+        // ikinci parametre key numarası olarak geçer
+
+        // for each ile nesne üzerinde gezinirken sıralama garantisi yoktur
+        // sıralı bir şekilde gezmek için for in kullanabiliriz
+        for val, key in {name: "Mustafa", age: 25, city: "İstanbul"}
+            p= key + " - " + val
+        // <p>name - Mustafa</p>
+        // <p>age - 25</p>
+        // <p>city - İstanbul</p>
+        // for in ile nesne üzerinde gezinirken sıralama garantisi vardır
+        // sıralı bir şekilde gezmek için for in kullanabiliriz
+
+        // for-else 
+        each val, key in []
+            p= key + " - " + val
+        else
+            p Hiçbir eleman yok
+        // <p>Hiçbir eleman yok</p>
+        // eğer eleman yoksa else çalışır
+

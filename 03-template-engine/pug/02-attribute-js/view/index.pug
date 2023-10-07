@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+    body
+        input(type="text")
+        // <input type="text"> ile aynı şeydir attribute'ler parantez içinde yazılır
+        br
+        input(type="text" placeholder="Enter your name")
+        // <input type="text" placeholder="Enter your name">
+        br
+        input(type="text" placeholder="Enter your name" disabled)
+        // <input type="text" placeholder="Enter your name" disabled>
+        br
+        input(type="text" data-js= `${5 > 2 ? "OK" : "NO"}`)
+        // <input type="text" data-js="OK"> backtiklerle js koduda yazabiliriz
+
+        // array tanımladık
+        - const myClasses=["class1", "class2", "class3"]
+        div(class=myClasses)
+        // <div class="class1 class2 class3"></div> class'lar elemente eklenir
+        div.extraClass(class=myClasses) MyClasses
+        // <div class="extraClass class1 class2 class3"></div> extra kendimiz yine class ekleyebiliriz
+
+        // nesne de tanımlayabiliriz
+        - const myStyles = {color: "red", background: "blue"}
+        div(style=myStyles) MyStyles
+        // <div style="color: red; background: blue;"></div> css ekleyebiliriz
+
+        - const myAttributes = {"src": "http://placehold.co/150x150", "alt": "photo"}
+        // img(src=myAttributes.src alt=myAttributes.alt) özellikler böylede eklenebilir
+        img&attributes(myAttributes)
+        // <img src="photo.png" alt="photo"> böylede eklenebilir
