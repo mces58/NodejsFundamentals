@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-product">Tüm Ürünleri Getir</button>
+    <p class="result"></p>
+    <script>
+      const btnProduct = document.querySelector("#btn-product");
+      const result = document.querySelector(".result");
+
+      btnProduct.addEventListener("click", () => {
+        fetch("http://localhost:3000/api/products")
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            let html = "";
+            data.forEach((item) => {
+              html += `
+                    <div>
+                    <h3>${item.name}</h3>
+                    <p>${item.price}</p>
+                    </div>
+                `;
+            });
+            result.innerHTML = html;
+          });
+      });
+    </script>
+  </body>
+</html>
