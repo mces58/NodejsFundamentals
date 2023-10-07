@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../include/head.ejs') %>
+
+  <body>
+    <%- include('../../include/nav.ejs') %>
+
+    <div class="container pt-5 mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="text-center mb-4">Edit Category</h1>
+          <form action="/admin/category/edit" method="post" id="category-form">
+            <input type="hidden" name="id" value="<%= category.id %>" />
+            <div class="mb-3">
+              <label for="category-name" class="form-label">
+                Category Name
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="category-name"
+                name="name"
+                value="<%= category.name %>" />
+            </div>
+            <div class="mb-3">
+              <label for="category-description" class="form-label">
+                Category Description
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="category-description"
+                name="description"
+                value=" <%= category.description %>" />
+            </div>
+            <div class="d-grid mt-4">
+              <button
+                class="btn btn-primary scale-min"
+                type="submit"
+                id="save-button">
+                Save Category
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="mt-5">
+          <strong>Ürün Sayısı:</strong>
+          <span class="badge bg-primary"> <%= productCounts %> </span>
+        </div>
+        <table class="table table-bordered mt-2">
+          <thead class="thead-dark">
+            <tr class="text-center">
+              <th>#</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Image</th>
+              <th>Category</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% products.forEach((product, index) => { %>
+            <tr class="text-center">
+              <td><%= index + 1 %></td>
+              <td><%= product.name %></td>
+              <td><i class="fa fa-try"></i> <%= product.price %></td>
+              <td><%- product.description %></td>
+              <td>
+                <img
+                  src="/static/img/<%= product.image %>"
+                  class="img-fluid rounded-4"
+                  width="200"
+                  alt="" />
+              </td>
+              <td><%= categoryName %></td>
+              <td>
+                <a
+                  href="/admin/product/edit/<%= product.id %>"
+                  class="btn btn-sm btn-warning w-100 mb-4 scale-min">
+                  Edit
+                </a>
+                <a
+                  href="/admin/product/delete/<%= product.id %>"
+                  class="btn btn-sm btn-danger w-100 scale-min">
+                  Delete
+                </a>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

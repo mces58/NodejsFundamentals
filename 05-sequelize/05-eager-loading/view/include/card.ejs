@@ -1,0 +1,29 @@
+<div class="card shadow p-0">
+  <img
+    src="/static/img/<%= image %>"
+    class="card-img-top"
+    alt="..."
+    loading="lazy" />
+  <div class="card-body">
+    <h4 class="card-title">
+      <a
+        href="/user/products/<%= id %>"
+        class="link-underline link-underline-opacity-0 link-underline-opacity-50-hover">
+        <%= name.toUpperCase() %>
+      </a>
+    </h4>
+    <p class="card-text"><%- description %></p>
+  </div>
+  <div class="card-footer">
+    <small class="text-muted">
+      <i class="fa fa-try"></i>
+      <%= price %>
+    </small>
+    <a
+      href="/user/products/<%= id %>"
+      class="btn btn-outline-primary float-end shadow scale-min">
+      <i class="fa fa-info-circle"></i>
+      Details
+    </a>
+  </div>
+</div>
