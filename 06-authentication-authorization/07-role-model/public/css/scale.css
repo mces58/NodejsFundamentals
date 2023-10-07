@@ -1,0 +1,9 @@
+.scale-max:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.scale-min:hover {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
