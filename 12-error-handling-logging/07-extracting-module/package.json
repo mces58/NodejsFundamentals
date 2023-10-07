@@ -1,0 +1,28 @@
+{
+  "name": "07-extracting-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development&&set PORT=7070&&set DB_PASSWORD=12345&&set JWT_PRIVATE_KEY=mysecretkey&&nodemon app.js",
+    "prod": "set NODE_ENV=production&&set PORT=7070&&nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.5",
+    "winston": "^3.10.0",
+    "winston-mongodb": "^5.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

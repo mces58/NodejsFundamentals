@@ -1,0 +1,8 @@
+{
+  "db": {
+    "password": "DB_PASSWORD"
+  },
+  "auth": {
+    "jwtPrivateKey": "JWT_PRIVATE_KEY"
+  }
+}

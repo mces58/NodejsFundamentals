@@ -1,0 +1,223 @@
+{
+  message: '500 - Could not get the products. - /api/products/ - GET - ::1',
+  level: 'error',
+  timestamp: '2023-08-31 09:48:21'
+}
+{
+  error: Error: Something failed miserably!
+      at Object.<anonymous> (D:\projects\.nodeJsDemos\12-error-handling-logging\06-uncaught-exception\app.js:24:26)
+      at Module._compile (node:internal/modules/cjs/loader:1275:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+      at Module.load (node:internal/modules/cjs/loader:1133:32)
+      at Module._load (node:internal/modules/cjs/loader:972:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+      at node:internal/main/run_main_module:23:47,
+  level: 'error',
+  message: 'unhandledRejection: Something failed miserably!\n' +
+    'Error: Something failed miserably!\n' +
+    '    at Object.<anonymous> (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception\\app.js:24:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1275:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1133:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:972:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)\n' +
+    '    at node:internal/main/run_main_module:23:47',
+  stack: 'Error: Something failed miserably!\n' +
+    '    at Object.<anonymous> (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception\\app.js:24:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1275:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1133:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:972:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)\n' +
+    '    at node:internal/main/run_main_module:23:47',
+  exception: true,
+  date: 'Thu Aug 31 2023 09:48:36 GMT+0300 (GMT+03:00)',
+  process: {
+    pid: 19008,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v19.8.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception\\app.js'
+    ],
+    memoryUsage: {
+      rss: 91570176,
+      heapTotal: 61825024,
+      heapUsed: 29794224,
+      external: 37409610,
+      arrayBuffers: 36187699
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 83056.484 },
+  trace: [
+    {
+      column: 26,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception\\app.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1275,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1329,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1133,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 972,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 83,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 23,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-08-31 09:48:36'
+}
+{
+  error: Error: Something failed miserably!
+      at Object.<anonymous> (D:\projects\.nodeJsDemos\12-error-handling-logging\06-uncaught-exception\app.js:24:26)
+      at Module._compile (node:internal/modules/cjs/loader:1275:14)
+      at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)
+      at Module.load (node:internal/modules/cjs/loader:1133:32)
+      at Module._load (node:internal/modules/cjs/loader:972:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+      at node:internal/main/run_main_module:23:47,
+  level: 'error',
+  message: 'unhandledRejection: Something failed miserably!\n' +
+    'Error: Something failed miserably!\n' +
+    '    at Object.<anonymous> (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception\\app.js:24:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1275:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1133:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:972:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)\n' +
+    '    at node:internal/main/run_main_module:23:47',
+  stack: 'Error: Something failed miserably!\n' +
+    '    at Object.<anonymous> (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception\\app.js:24:26)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1275:14)\n' +
+    '    at Module._extensions..js (node:internal/modules/cjs/loader:1329:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1133:32)\n' +
+    '    at Module._load (node:internal/modules/cjs/loader:972:12)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)\n' +
+    '    at node:internal/main/run_main_module:23:47',
+  exception: true,
+  date: 'Thu Aug 31 2023 09:49:02 GMT+0300 (GMT+03:00)',
+  process: {
+    pid: 13224,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v19.8.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception\\app.js'
+    ],
+    memoryUsage: {
+      rss: 93200384,
+      heapTotal: 62087168,
+      heapUsed: 42696688,
+      external: 38718368,
+      arrayBuffers: 37496774
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 83082.203 },
+  trace: [
+    {
+      column: 26,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\06-uncaught-exception\\app.js',
+      function: null,
+      line: 24,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1275,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._extensions..js',
+      line: 1329,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1133,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._load',
+      line: 972,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/run_main',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 83,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'node:internal/main/run_main_module',
+      function: null,
+      line: 23,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2023-08-31 09:49:02'
+}

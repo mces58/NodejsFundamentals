@@ -1,0 +1,296 @@
+{
+  error: MongoServerError: bad auth : authentication failed
+      at Connection.onMessage (D:\projects\.nodeJsDemos\12-error-handling-logging\07-extracting-module\node_modules\mongodb\lib\cmap\connection.js:202:26)
+      at MessageStream.<anonymous> (D:\projects\.nodeJsDemos\12-error-handling-logging\07-extracting-module\node_modules\mongodb\lib\cmap\connection.js:61:60)
+      at MessageStream.emit (node:events:512:28)
+      at processIncomingData (D:\projects\.nodeJsDemos\12-error-handling-logging\07-extracting-module\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+      at MessageStream._write (D:\projects\.nodeJsDemos\12-error-handling-logging\07-extracting-module\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+      at writeOrBuffer (node:internal/streams/writable:392:12)
+      at _write (node:internal/streams/writable:333:10)
+      at Writable.write (node:internal/streams/writable:337:10)
+      at TLSSocket.ondata (node:internal/streams/readable:766:22)
+      at TLSSocket.emit (node:events:512:28) {
+    ok: 0,
+    code: 8000,
+    codeName: 'AtlasError',
+    connectionGeneration: 0,
+    [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
+  },
+  level: 'error',
+  message: 'unhandledRejection: bad auth : authentication failed\n' +
+    'MongoServerError: bad auth : authentication failed\n' +
+    '    at Connection.onMessage (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js:202:26)\n' +
+    '    at MessageStream.<anonymous> (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:512:28)\n' +
+    '    at processIncomingData (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:124:16)\n' +
+    '    at MessageStream._write (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:392:12)\n' +
+    '    at _write (node:internal/streams/writable:333:10)\n' +
+    '    at Writable.write (node:internal/streams/writable:337:10)\n' +
+    '    at TLSSocket.ondata (node:internal/streams/readable:766:22)\n' +
+    '    at TLSSocket.emit (node:events:512:28)',
+  stack: 'MongoServerError: bad auth : authentication failed\n' +
+    '    at Connection.onMessage (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js:202:26)\n' +
+    '    at MessageStream.<anonymous> (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:512:28)\n' +
+    '    at processIncomingData (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:124:16)\n' +
+    '    at MessageStream._write (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:392:12)\n' +
+    '    at _write (node:internal/streams/writable:333:10)\n' +
+    '    at Writable.write (node:internal/streams/writable:337:10)\n' +
+    '    at TLSSocket.ondata (node:internal/streams/readable:766:22)\n' +
+    '    at TLSSocket.emit (node:events:512:28)',
+  exception: true,
+  date: 'Thu Aug 31 2023 09:54:24 GMT+0300 (GMT+03:00)',
+  process: {
+    pid: 17340,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v19.8.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\app.js'
+    ],
+    memoryUsage: {
+      rss: 93020160,
+      heapTotal: 63397888,
+      heapUsed: 34034856,
+      external: 37451404,
+      arrayBuffers: 36229770
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 83403.859 },
+  trace: [
+    {
+      column: 26,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js',
+      function: 'Connection.onMessage',
+      line: 202,
+      method: 'onMessage',
+      native: false
+    },
+    {
+      column: 60,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js',
+      function: null,
+      line: 61,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'MessageStream.emit',
+      line: 512,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js',
+      function: 'processIncomingData',
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js',
+      function: 'MessageStream._write',
+      line: 33,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 392,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 333,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'Writable.write',
+      line: 337,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/streams/readable',
+      function: 'TLSSocket.ondata',
+      line: 766,
+      method: 'ondata',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'TLSSocket.emit',
+      line: 512,
+      method: 'emit',
+      native: false
+    }
+  ],
+  timestamp: '2023-08-31 09:54:24'
+}
+{
+  error: MongoServerError: bad auth : authentication failed
+      at Connection.onMessage (D:\projects\.nodeJsDemos\12-error-handling-logging\07-extracting-module\node_modules\mongodb\lib\cmap\connection.js:202:26)
+      at MessageStream.<anonymous> (D:\projects\.nodeJsDemos\12-error-handling-logging\07-extracting-module\node_modules\mongodb\lib\cmap\connection.js:61:60)
+      at MessageStream.emit (node:events:512:28)
+      at processIncomingData (D:\projects\.nodeJsDemos\12-error-handling-logging\07-extracting-module\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+      at MessageStream._write (D:\projects\.nodeJsDemos\12-error-handling-logging\07-extracting-module\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+      at writeOrBuffer (node:internal/streams/writable:392:12)
+      at _write (node:internal/streams/writable:333:10)
+      at Writable.write (node:internal/streams/writable:337:10)
+      at TLSSocket.ondata (node:internal/streams/readable:766:22)
+      at TLSSocket.emit (node:events:512:28) {
+    ok: 0,
+    code: 8000,
+    codeName: 'AtlasError',
+    connectionGeneration: 0,
+    [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
+  },
+  level: 'error',
+  message: 'unhandledRejection: bad auth : authentication failed\n' +
+    'MongoServerError: bad auth : authentication failed\n' +
+    '    at Connection.onMessage (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js:202:26)\n' +
+    '    at MessageStream.<anonymous> (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:512:28)\n' +
+    '    at processIncomingData (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:124:16)\n' +
+    '    at MessageStream._write (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:392:12)\n' +
+    '    at _write (node:internal/streams/writable:333:10)\n' +
+    '    at Writable.write (node:internal/streams/writable:337:10)\n' +
+    '    at TLSSocket.ondata (node:internal/streams/readable:766:22)\n' +
+    '    at TLSSocket.emit (node:events:512:28)',
+  stack: 'MongoServerError: bad auth : authentication failed\n' +
+    '    at Connection.onMessage (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js:202:26)\n' +
+    '    at MessageStream.<anonymous> (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:512:28)\n' +
+    '    at processIncomingData (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:124:16)\n' +
+    '    at MessageStream._write (D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:392:12)\n' +
+    '    at _write (node:internal/streams/writable:333:10)\n' +
+    '    at Writable.write (node:internal/streams/writable:337:10)\n' +
+    '    at TLSSocket.ondata (node:internal/streams/readable:766:22)\n' +
+    '    at TLSSocket.emit (node:events:512:28)',
+  exception: true,
+  date: 'Thu Aug 31 2023 09:54:37 GMT+0300 (GMT+03:00)',
+  process: {
+    pid: 17396,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v19.8.1',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\app.js'
+    ],
+    memoryUsage: {
+      rss: 93130752,
+      heapTotal: 63135744,
+      heapUsed: 34070856,
+      external: 37491853,
+      arrayBuffers: 36270219
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 83417.312 },
+  trace: [
+    {
+      column: 26,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js',
+      function: 'Connection.onMessage',
+      line: 202,
+      method: 'onMessage',
+      native: false
+    },
+    {
+      column: 60,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\connection.js',
+      function: null,
+      line: 61,
+      method: null,
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'MessageStream.emit',
+      line: 512,
+      method: 'emit',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js',
+      function: 'processIncomingData',
+      line: 124,
+      method: null,
+      native: false
+    },
+    {
+      column: 9,
+      file: 'D:\\projects\\.nodeJsDemos\\12-error-handling-logging\\07-extracting-module\\node_modules\\mongodb\\lib\\cmap\\message_stream.js',
+      function: 'MessageStream._write',
+      line: 33,
+      method: '_write',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/streams/writable',
+      function: 'writeOrBuffer',
+      line: 392,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: '_write',
+      line: 333,
+      method: null,
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/streams/writable',
+      function: 'Writable.write',
+      line: 337,
+      method: 'write',
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/streams/readable',
+      function: 'TLSSocket.ondata',
+      line: 766,
+      method: 'ondata',
+      native: false
+    },
+    {
+      column: 28,
+      file: 'node:events',
+      function: 'TLSSocket.emit',
+      line: 512,
+      method: 'emit',
+      native: false
+    }
+  ],
+  timestamp: '2023-08-31 09:54:37'
+}
