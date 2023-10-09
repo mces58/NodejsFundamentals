@@ -1,6 +1,6 @@
 </br>
 
-<img src="https://github.com/mces58/NodejsFundamentals/assets/72516854/cda8ab88-ddbb-40f2-b45e-6b36901924e1">
+<img src="https://github.com/mces58/NodejsFundamentals/assets/72516854/b6c4a2e9-9453-4b00-8707-cd8a4be8c6f4">
 
 </br>
 
