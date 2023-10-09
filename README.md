@@ -57,19 +57,23 @@
 
 <hr>
 
+<p align="center">
+	To download the JavaScript dependencies you want to use in your project, you can use the <code>'npm install'</code> command.
+</p>
+
 <ol type="1">
 	<h2>
-	<li>
-		&#x1F4A1; 
-		<a href="https://github.com/mces58/NodejsFundamentals/tree/main/00-nodejs">BASIC</a>
+		<li>
+			&#x1F4A1; 
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/00-nodejs">BASICS</a>
 		</li>
  	</h2>
  	<p>
 		<em>
-			Node.js Fundamentals: In this section, we focus on the foundational building blocks of Node.js. We begin with a brief introduction to the course and then provide detailed information about the global object of Node.js, 
-			known as the 'global object.' 
-			By covering the topic of Node modules, you will learn how to make your code modular. Additionally, by exploring the concepts of HTTP request-response, you will gain an understanding of how Node.js operates in web applications. 
-			This section serves as an excellent starting point for your journey to understand and utilize the fundamental building blocks of Node.js. &#x1F4DA;
+			<strong>Node.js Fundamentals:</strong> In this section, we focus on the foundational building blocks of Node.js. We begin with a brief introduction to the course and then provide detailed information about 
+			the global object of Node.js, known as the 'global object.' By covering the topic of Node modules, you will learn how to make your code modular. Additionally, 
+			by exploring the concepts of HTTP request-response, you will gain an understanding of how Node.js operates in web applications. This section serves as an excellent starting point for your 
+			journey to understand and utilize the fundamental building blocks of Node.js. &#x1F4DA;
 		</em>
 	</p>
 	<ul type="disc">
@@ -84,5 +88,597 @@
 		<li>
 			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/02-filename-dirname/app.js">Filename & Dirname</a>
 		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/03-nodejs-module/app.js">Node.js Module</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/04-http-module/app.js">Http Module</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/05-request/app.js">Request</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/06-response/app.js">Response</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/08-routing-request/app.js">Routing Request</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/09-path-module/app.js">Path Module</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/10-url-module/app.js">Url Module</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/11-events-module/app.js">Events Module</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/12-fs-module/app.js">Fs Module</a>
+		</li>
+		<br>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/00-nodejs/14-post-method/app.js">Post Method</a>
+		</li>
 	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F47E; 
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/01-npm">NPM</a>
+		</li>
+ 	</h2>
+	<p>
+		<em>
+			<strong>NPM (Node Package Manager):</strong> In this section, you will explore NPM, a vital component of the Node.js ecosystem, in detail. First, you'll learn what a package.json file is and how to create one. 
+			Then, you'll discover how to create and manage NPM packages, as well as understand the difference between global and local packages. You will also learn how to optimize your web applications 
+			with Webpack configuration, making your projects more efficient. Additionally, in this section, you will see hands-on examples of how to harness the power of NPM through a sample project. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/01-npm/00-intro/app.js">Intro</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/01-npm/01-node-module">Node Module</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/01-npm/02-package-json/app.js">Package.json</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/01-npm/03-npm-package/app.js">Npm Package</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/01-npm/04-global-local-package/app.js">Global Local Package</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/01-npm/05-webpack-configuration">Webpack Configuration</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/01-npm/MovieProject">Movie Project</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F31F; 
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/02-expressjs">EXPRESS.JS</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>Express.js:</strong> This section provides a quick introduction to web development. We begin with a brief introduction to Express.js and then teach you how to set up an Express application. 
+			We explore how to streamline the development process using tools like Nodemon. We explain how to handle requests and responses with the concept of middleware, and then demonstrate how to create
+			dynamic web pages using routing. You'll learn how to use body-parser for data exchange and create modular structures with express-router. Additionally, in this section, you will learn how to 
+			manage error pages, send HTML pages, and serve static files. This will equip you with the fundamental skills needed to build powerful web applications. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/02-expressjs/00-intro/app.js">Intro</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/02-expressjs/01-setup/app.js">Setup</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/02-expressjs/02-nodemon/app.js">Nodemon</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/02-expressjs/03-middleware/app.js">Middleware</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/02-expressjs/04-routing/app.js">Routing</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/blob/main/02-expressjs/05-body-parser/app.js">Body-parser</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/02-expressjs/06-express-router">Express Router</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/02-expressjs/07-error-page">Error Page</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/02-expressjs/10-static-file">Static Files</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F4A3;
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine">TEMPLATE ENGINE</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>Template Engine Section:</strong> In this section, we focus on the concept of template engines, particularly delving into EJS and Pug (formerly known as Jade) template engines in detail.
+			We begin by learning what template engines are, how they work, and how to use them. Throughout the course, we will primarily concentrate on EJS template engine, teaching you how 
+			to create dynamic web pages with this powerful tool. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="circle">
+		<li>
+			<h6>
+  				<strong><em> EJS </em></strong>
+			</h6>
+			<ul type="disc">
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/ejs">Intro</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/ejs/01-injecting-value">Injecting Value</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/ejs/02-for-loop">For Loop</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/ejs/03-conditional">Conditional</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/ejs/04-partial">Partial</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/ejs/05-layout">Layout</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<h6>
+  				<strong><em> PUG </em></strong>
+			</h6>
+			<ul type="disc">
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/00-intro">Intro</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/01-id-class">Id Class</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/02-attribute-js">Attribute Js</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/03-css">Css</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/04-for-each">For Each</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/05-conditional">Conditional</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/06-case-statement">Case Statement</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/07-include">Include</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/08-mixin">Mixin</a>
+				</li>
+				<br/>
+				<li>
+					<a href="https://github.com/mces58/NodejsFundamentals/tree/main/03-template-engine/pug/09-extends">Extends</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F30A; 
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/04-mysql-database">MYSQL DB</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>MySQL Database Operations:</strong> In this section, we dive deep into MySQL database operations. We start by establishing a connection to the 
+			MySQL database and learning how to access it. Additionally, we explain how to organize database operations using the MVC (Model-View-Controller) model. We progress by teaching you how to perform 
+			CRUD (Create-Read-Update-Delete) operations, enabling you to create, read, update, and delete data in the database. We cover the topic of managing product-category relationships and instruct you on 
+			using asynchronous programming (async-await). Furthermore, in this section, you will take your database operations to the next level by preparing an administration panel, enhancing your 
+			application development experience. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/04-mysql-database/00-connection-database">Connection Database</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/04-mysql-database/01-mvc">MVC</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/04-mysql-database/02-crud">CRUD</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/04-mysql-database/03-category-relationship">Category Relationship</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/04-mysql-database/04-async-await">Async Await</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/04-mysql-database/05-admin-panel">Admin Panel</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x2600; 
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/05-sequelize">SEQUELIZE</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>Sequelize Section:</strong> In this section, we take database operations to the next level with Sequelize. 
+			Firstly, you'll learn how to create tables and add data using Sequelize. We'll also explore how to apply database operations in your application, focusing on the 'product' model.
+			We address the management of product-category relationships and explain important concepts like 'lazy loading' and 'eager loading' to teach you how to retrieve data and handle relational data efficiently. 
+			Additionally, you will learn operations such as generating URL-friendly text (slugify) and implementing pagination in this section. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/05-sequelize/00-create-table">Create Table</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/05-sequelize/01-insert-data">Insert Data</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/05-sequelize/02-product-sequelize">Product Model</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/05-sequelize/03-category-relationship">Category Relationship</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/05-sequelize/04-lazy-loading">Lazy Loading</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/05-sequelize/05-eager-loading">Eager Loading</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/05-sequelize/06-slugField">Slugify</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/05-sequelize/07-pagination">Pagination</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F4A5; 
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/06-authentication-authorization">AUTHENTICATION AUTHORIZATION</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>Authentication and Authorization:</strong> In this section, we focus on strengthening your application with a strong emphasis on security. 
+			We begin by introducing the concepts of authentication and authorization. Then, you will learn how to create a user model and walk through the step-by-step process of handling registration.
+			We delve into topics like cookie and session management to teach you secure session management techniques. You will also learn how to prevent CSRF (Cross-Site Request Forgery) attacks and 
+			implement password reset processes with practical examples. Furthermore, you'll discover how to create a role model, enabling you to authorize users and resources effectively. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/06-authentication-authorization/00-intro">Intro</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/06-authentication-authorization/01-user-model">User Model</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/06-authentication-authorization/02-register">Register</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/06-authentication-authorization/03-cookie">Cookie</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/06-authentication-authorization/04-session">Session</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/06-authentication-authorization/05-csrf">CSRF</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/06-authentication-authorization/06-reset-password">Send Mail</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/06-authentication-authorization/07-role-model">Role Model</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			 &#x1F512;
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/07-validation">VALIDATION</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>Validation Section:</strong> This section emphasizes the importance of data validation and error management. 
+			Firstly, we address model validation, teaching you how to ensure the correctness of incoming data. Then, we explore error handling strategies. Validation enhances the security and stability of your application, 
+			while error management improves the user experience and helps you anticipate potential issues in advance. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/07-validation/00-model-validation">Model Validation</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/07-validation/01-error-handling">Error Handling</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F4AF;
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/08-rest-api">REST API</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>REST API Section:</strong> This section focuses on the fundamental concept of REST API, which is crucial for developing modern web applications. 
+			We begin by introducing the concept of REST API, and then you will learn how to retrieve data using HTTP GET requests. Next, we cover HTTP POST requests for sending and saving data from users. 
+			By diving deep into data validation, you will understand how to validate incoming data. We explore the use of HTTP PUT requests to update existing data and HTTP DELETE requests for data deletion. 
+			Furthermore, we discuss how to organize API routes using Express Router and manage the CORS (Cross-Origin Resource Sharing) concept. This will equip you with the skills to create powerful and scalable RESTful APIs. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/08-rest-api/00-intro">Intro</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/08-rest-api/01-get-request">Get Request</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/08-rest-api/02-post-request">Post Request</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/08-rest-api/03-validation">Validation</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/08-rest-api/04-put-request">Put Request</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/08-rest-api/05-delete-request">Delete Request</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/08-rest-api/06-express-router">Express Router</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/08-rest-api/07-cors">CORS</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F343;
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/09-mongo-db">MONGO DB</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>MongoDB and Mongoose Section:</strong> This section focuses on the NoSQL database MongoDB and the Mongoose library. We start by teaching you how to connect to the
+			MongoDB database and then delve into defining data models using Mongoose schemas. By creating a category model, you will learn how to store and retrieve data in MongoDB. 
+			We explore data selection, querying with query operators, updating, and deleting data in-depth. Furthermore, in this section, we guide you through the process of developing 
+			an API for category data step by step, teaching you how your application can interact with the MongoDB database. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/09-mongo-db/00-connection-db">Connection DB</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/09-mongo-db/01-mongoose-schema">Mongoose Schema</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/09-mongo-db/02-category-model">Category Model</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/09-mongo-db/03-selecting">Selecting</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/09-mongo-db/04-query-operator">Query Operator</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/09-mongo-db/05-update">Update</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/09-mongo-db/06-delete">Delete</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/09-mongo-db/07-category-api">Category API</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F9F7;
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/10-mongoose-relationship">MONGOOSE RELATIONSHIP</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>Mongoose Relationships Section:</strong> This section focuses on understanding database relationships with Mongoose. 
+			We begin with an introduction to understand how relationships work in Mongoose. Then, we delve into the concept of 'reference relationships,' teaching you how to establish relationships between different collections.
+			Additionally, we cover the topic of 'embedded documents,' enabling you to learn how to store data as nested documents and how to utilize these structures, thereby equipping you to manage more 
+			complex database structures with Mongoose. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/10-mongoose-relationship/00-intro">Intro</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/10-mongoose-relationship/01-reference-relationship">Reference Relationship</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/10-mongoose-relationship/02-embedded-document">Embedded Document</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F511;
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/11-token-based-authentication">TOKEN BASED AUTHENTICATION</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>Token-Based Authentication Section:</strong> This section focuses on secure authentication methods. We start with a brief introduction and then 
+			proceed to learn how to establish a relationship with the user model. We cover the authentication of logged-in users (auth user) and how to secure their identities.
+			By examining token verification processes, you will learn how to validate the authenticity of incoming requests. Additionally, we address role-based authorization (role-auth), 
+			exploring methods for access control for different user groups. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/11-token-based-authentication/00-user-model">User Model</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/11-token-based-authentication/01-auth-user">Auth User</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/11-token-based-authentication/02-token-verification">Token Verification</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/11-token-based-authentication/03-role-auth">Role Auth</a>
+		</li>
+	</ul>
+	<br/>
+	<h2>
+		<li>
+			&#x1F3AF;
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/12-error-handling-logging">ERROR HANDLING & LOGGING</a>
+		</li>
+	</h2>
+	<p>
+		<em>
+			<strong>Error Handling and Logging Section:</strong> This section focuses on error management and logging in your application. We begin by learning how to create a custom error middleware for error handling. 
+			Then, we explore the concept of 'express-async-error' to handle errors that occur during asynchronous processes. By examining error logging methods, you will learn how to track and analyze errors in your application. 
+			We also cover how to store errors in MongoDB. You will discover how to manage environment variables and configuration, enabling you to switch between different environments.
+			We also address important topics like handling unexpected exceptions (uncaught exceptions) and module extraction in this section. &#x1F4DA;
+		</em>
+	</p>
+	<ul type="disc">
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/12-error-handling-logging/00-error-middleware">Error Middleware</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/12-error-handling-logging/01-express-async-error">Express Async Error</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/12-error-handling-logging/02-logging-error">Logging Error</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/12-error-handling-logging/03-logging-error-mongodb">Logging Error with Mongo DB</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/12-error-handling-logging/04-environment-variable">Environment Variable</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/12-error-handling-logging/05-configuration">Configuration</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/12-error-handling-logging/06-uncaught-exception">Uncaught Exception</a>
+		</li>
+		<br/>
+		<li>
+			<a href="https://github.com/mces58/NodejsFundamentals/tree/main/12-error-handling-logging/07-extracting-module">Extracting Module</a>
+		</li>
+	</ul>
+	<br/>
 </ol>
